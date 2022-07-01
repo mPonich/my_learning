@@ -1,0 +1,331 @@
+html {
+  height: 100%;
+  background: radial-gradient(circle, #395e6d 49%, #567f90 100%);
+  font-family: "Open Sans", sans-serif;
+}
+
+input {
+  height: 40px;
+  border: 1px solid silver;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+label {
+  display: block;
+  margin-left: 5px;
+}
+
+.container {
+  display: grid;
+  margin: 55px;
+  border: 1px solid silver;
+  border-radius: 15px;
+}
+.container .header {
+  background-color: #eff0f1;
+  border-radius: 15px 15px 0px 0px;
+  color: #8d8e8e;
+  max-height: 150px;
+  font-size: 20px;
+  text-align: center;
+}
+.container .form_account {
+  grid-row: 2;
+  font-weight: 500;
+  padding: 50px;
+  background: radial-gradient(circle, #fafafa 50%, #fefefe 96%);
+  display: grid;
+  gap: 20px;
+}
+.container .form_account .row_1 {
+  display: grid;
+  grid-template-columns: 50% 3% 47%;
+  color: #1bba93;
+  font-size: 20px;
+}
+.container .form_account .row_1 .first_name {
+  grid-column: 1;
+  grid-row: 2;
+}
+.container .form_account .row_1 .title_lastName {
+  grid-column: 3;
+  grid-row: 1;
+}
+.container .form_account .row_1 .last_name {
+  grid-column: 3;
+  grid-row: 2;
+}
+.container .form_account .row_2 {
+  margin-top: 20px;
+  display: grid;
+  color: #1bba93;
+  font-size: 20px;
+}
+.container .form_account .row_3 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 50% 3% 47%;
+  color: #1bba93;
+  font-size: 20px;
+}
+.container .form_account .row_3 .pass {
+  grid-column: 1;
+  grid-row: 2;
+}
+.container .form_account .row_3 .title_confirm_pass {
+  grid-column: 3;
+  grid-row: 1;
+}
+.container .form_account .row_3 .confirm_password {
+  grid-column: 3;
+  grid-row: 2;
+}
+.container .form_account .row_4 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 50% 3% 47%;
+  color: #1bba93;
+  font-size: 20px;
+}
+.container .form_account .row_4 .gender {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 20px;
+  color: #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container .form_account .row_4 .gender .male {
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .form_account .row_4 .gender .female {
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+.container .form_account .row_4 .title_hobbies {
+  grid-column: 3;
+  grid-row: 1;
+}
+.container .form_account .row_4 .hobbies {
+  grid-column: 3;
+  grid-row: 2;
+  display: grid;
+  font-size: 20px;
+  color: #666666;
+}
+.container .form_account .row_4 .hobbies .music {
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .form_account .row_4 .hobbies .sports,
+.container .form_account .row_4 .hobbies .travel,
+.container .form_account .row_4 .hobbies .movies {
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+.container .form_account .row_5 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 50% 3% 47%;
+  color: #1bba93;
+  font-size: 20px;
+}
+.container .form_account .row_5 .source {
+  grid-row: 2;
+  max-height: 100px;
+}
+.container .form_account .row_5 .title_income {
+  grid-column: 3;
+  grid-row: 1;
+}
+.container .form_account .row_5 .income {
+  grid-column: 3;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.container .form_account .row_5 .list {
+  grid-column: 1;
+}
+.container .form_account .row_5 .income_dscr {
+  grid-column: 2;
+  width: 65px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #1bba93;
+  border: 1px solid #1bba93;
+  color: white;
+}
+.container .form_account .row_6 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 50% 3% 47%;
+  color: #1bba93;
+  font-size: 20px;
+}
+.container .form_account .row_6 .upload {
+  margin-top: 5px;
+  grid-row: 2;
+  color: black;
+  border: none;
+  border-radius: 0px;
+}
+.container .form_account .row_6 .age {
+  grid-column: 3;
+}
+.container .form_account .row_6 .select_age {
+  margin-top: 5px;
+  grid-column: 3;
+  grid-row: 2;
+}
+.container .form_account .row_7 {
+  margin-top: 20px;
+  display: grid;
+  color: #1bba93;
+  font-size: 20px;
+}
+.container .form_account .row_7 .biography {
+  min-height: 100px;
+}
+.container .footer {
+  grid-row: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #eff0f1;
+  border-radius: 0px 0px 15px 15px;
+  min-height: 100px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.container .footer .create_btn {
+  height: 50px;
+  width: 150px;
+  margin: 25px 55px;
+  border-radius: 10px;
+  background-color: #1bba93;
+  border: 1px solid #1bba93;
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .container .form_account .row_1 {
+    grid-template-columns: none;
+  }
+  .container .form_account .row_1 .first_name {
+    grid-row: 2;
+  }
+  .container .form_account .row_1 .title_lastName {
+    margin-top: 20px;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .container .form_account .row_1 .last_name {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .container .form_account .row_2 {
+    grid-row: 5;
+  }
+  .container .form_account .row_3 .title_pass {
+    grid-row: 6;
+  }
+  .container .form_account .row_3 .pass {
+    grid-row: 7;
+    min-width: 250px;
+  }
+  .container .form_account .row_3 .title_confirm_pass {
+    margin-top: 20px;
+    grid-column: 1;
+    grid-row: 8;
+  }
+  .container .form_account .row_3 .confirm_password {
+    grid-column: 1;
+    grid-row: 9;
+    min-width: 250px;
+  }
+  .container .form_account .row_4 .title_gender {
+    grid-row: 10;
+  }
+  .container .form_account .row_4 .gender {
+    grid-row: 11;
+  }
+  .container .form_account .row_4 .gender .male {
+    grid-row: 12;
+  }
+  .container .form_account .row_4 .gender .female {
+    grid-row: 13;
+  }
+  .container .form_account .row_4 .title_hobbies {
+    margin-top: 20px;
+    grid-column: 1;
+    grid-row: 14;
+  }
+  .container .form_account .row_4 .hobbies {
+    grid-column: 1;
+    grid-row: 15;
+  }
+  .container .form_account .row_4 .hobbies .music,
+  .container .form_account .row_4 .hobbies .sports,
+  .container .form_account .row_4 .hobbies .travel,
+  .container .form_account .row_4 .hobbies .movies {
+    grid-row: 16;
+  }
+  .container .form_account .row_5 .source {
+    grid-row: 18;
+  }
+  .container .form_account .row_5 .title_income {
+    margin-top: 20px;
+    grid-column: 1;
+    grid-row: 19;
+  }
+  .container .form_account .row_5 .income {
+    grid-column: 1;
+    grid-row: 20;
+    grid-template-columns: 95% 5%;
+  }
+  .container .form_account .row_6 {
+    grid-template-columns: none;
+  }
+  .container .form_account .row_6 .upload {
+    grid-row: 21;
+  }
+  .container .form_account .row_6 .age {
+    grid-column: 1;
+    grid-row: 22;
+  }
+  .container .form_account .row_6 .select_age {
+    grid-column: 1;
+    grid-row: 23;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Create account</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Create Account</h1>
+      </div>
+      <div class="form_account">
+        <form action="">
+          <div class="row_1">
+            <div class="title_firstName">First name*</div>
+            <input
+              required
+              class="first_name"
+              type="text"
+              placeholder=" enter your first name"
+            />
+            <div class="title_lastName">Last name</div>
+            <input
+              class="last_name"
+              type="text"
+              placeholder=" enter your last name"
+            />
+          </div>
+          <div class="row_2">
+            <div class="title_email">Email*</div>
+            <input
+              required
+              class="email"
+              type="email"
+              placeholder=" enter your email"
+            />
+          </div>
+          <div class="row_3">
+            <div class="title_pass">Password*</div>
+            <input
+              required
+              class="pass"
+              type="password"
+              placeholder=" enter your password"
+            />
+            <div class="title_confirm_pass">Confirm Password*</div>
+            <input
+              required
+              class="confirm_password"
+              type="password"
+              placeholder=" enter your password again"
+            />
+          </div>
+          <div class="row_4">
+            <div class="title_gender">Gender:</div>
+            <div class="gender">
+              <div class="male">
+                <input type="radio" id="male" />
+                <label for="male">Male</label>
+              </div>
+              <div class="female">
+                <input type="radio" id="female" />
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <div class="title_hobbies">Hobbies:</div>
+            <div class="hobbies">
+              <div class="music">
+                <input type="checkbox" id="music" />
+                <label for="music">Music</label>
+              </div>
+              <div class="sports">
+                <input type="checkbox" id="sports" />
+                <label for="sports">Sports</label>
+              </div>
+              <div class="travel">
+                <input type="checkbox" id="travel" />
+                <label for="travel">Travel</label>
+              </div>
+              <div class="movies">
+                <input type="checkbox" id="movies" />
+                <label for="movies">Movies</label>
+              </div>
+            </div>
+          </div>
+          <div class="row_5">
+            <div class="title_source">Source of Income</div>
+            <select class="source" name="source" id="source">
+              <option selected value="Employed">Employed</option>
+              <option value="Studen">Student</option>
+              <option value="Unemployed">Unemployed</option>
+            </select>
+            <div class="title_income">Income</div>
+            <div class="income">
+              <input
+                class="list"
+                type="range"
+                min="20"
+                max="100"
+                step="20"
+                value="20"
+                list="rangeList"
+                onchange="document.getElementById('rangeValue').innerHTML = this.value;"
+              />
+              <datalist>
+                <option value="20" label="20"></option>
+                <option value="40" label="40"></option>
+                <option value="60" label="60"></option>
+                <option value="80" label="80"></option>
+                <option value="100" label="100"></option>
+              </datalist>
+              <button class="income_dscr">
+                <span id="rangeValue">20</span>K
+              </button>
+            </div>
+          </div>
+          <div class="row_6">
+            <div class="title_uploadPicture">Upload Profile Picture</div>
+            <input
+              class="upload"
+              type="file"
+              name="profilePicture"
+              multiple
+              accept="image/*,image/jpeg"
+            />
+            <div class="age">Age</div>
+            <input class="select_age" type="number" value="18" />
+          </div>
+          <div class="row_7">
+            <div class="bio">Bio</div>
+            <textarea
+              class="biography"
+              name="biography"
+              id="biography"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        <button class="create_btn">Create</button>
+      </div>
+    </div>
+  </body>
+</html>
