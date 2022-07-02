@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700&display=swap");
+
+* {
+  font-family: "Titillium Web", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 250px auto;
+}
+
+.nav_menu {
+  grid-column: 1;
+  background-color: rgb(226, 221, 216);
+  border-right: 1px solid;
+  min-height: 100%;
+  .nav {
+    position: fixed;
+    top: 0;
+
+    h1 {
+      padding-left: 10px;
+      text-align: center;
+      text-decoration: underline;
+      font-size: 40px;
+    }
+    li {
+      list-style-type: none;
+    }
+    ul {
+      padding: 0;
+      text-align: end;
+      font-size: 18px;
+      text-indent: 20px;
+    }
+  }
+}
+
+.content {
+  padding: 0px 25px 0px 20px;
+  position: relative;
+  grid-column: 2;
+  background-color: rgb(244, 244, 244);
+  font-size: 17px;
+  min-height: 100%;
+}
+
+pre {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    display: block;
+  }
+  .nav_menu {
+    margin-top: -20px;
+    padding-top: 10px;
+    .nav {
+      position: sticky;
+      ul {
+        text-align: center;
+        text-indent: 0;
+      }
+    }
+  }
+  .content {
+    margin-top: -20px;
+    padding-top: 10px;
+    position: sticky;
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CSS Tutorials</title>
+  </head>
+  <body>
+    <nav class="nav_menu">
+      <div class="nav">
+        <h1 class="nav_title">CSS tutorials</h1>
+        <ul>
+          <hr class="line" />
+          <li><a href="#About CSS">About CSS</a></li>
+          <hr class="line" />
+          <li><a href="#Web documents">Web documents</a></li>
+          <hr class="line" />
+          <li><a href="#Document presentation">Document presentation</a></li>
+          <hr class="line" />
+          <li><a href="#Conclusion">Conclusion</a></li>
+          <hr class="line" />
+          <li><a href="#Why use CSS?">Why use CSS?</a></li>
+          <hr class="line" />
+          <li><a href="#selectors">Using selectors</a></li>
+          <hr class="line" />
+          <li><a href="#Class selectors">Class selectors</a></li>
+          <hr class="line" />
+          <li><a href="#ID selectors">ID selectors</a></li>
+          <hr class="line" />
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <h2><a name="About CSS"></a>About CSS</h2>
+      <p>
+        Cascading Style Sheets (CSS) is a language for specifying how documents
+        are presented to users. A document is a collection of information that
+        is structured using a markup language such as HTML (HyperText Markup
+        Language). CSS is a foundation technology, used today by most documents
+        on the web.
+      </p>
+      <p>
+        The primary goal of CSS is to allow separation of a document’s
+        presentation characteristics (formatting) from the document’s content.
+        Separating content and formatting simplifies document creation and
+        maintenance, improves presentation flexibility, and allows multiple HTML
+        pages to share formatting by placing formatting rules in an external
+        file.
+      </p>
+      <p>
+        CSS rules can control virtually every aspect of data formatting,
+        including font, color, weight, spacing, positioning, background colors
+        and images, link characteristics, and more.
+      </p>
+      <hr />
+      <h2><a name="Web documents"></a>Web documents</h2>
+      <p>
+        A web page like the one you are reading is a document. The information
+        that you see in a web page is usually structured using HTML, and the
+        actual content of the page and its presentation characteristics may come
+        from a variety of sources.
+      </p>
+      <p>
+        When your web browser requests the page, one of the sources is typically
+        a CSS file containing formatting directives, or rules. The web page
+        explicitly references the CSS file, in effect requesting that the CSS
+        rules be applied to the page contents.
+      </p>
+      <hr />
+      <h2><a name="Document presentation"></a>Document presentation</h2>
+      <p>
+        Presenting an HTML document to a user means converting it into a form
+        that humans can read and use. Browsers such as Chrome, Opera, Firefox,
+        and Internet Explorer are designed to present documents visually, and
+        make use of CSS rules to determine how to format the data contained in
+        the HTML document to achieve that presentation.
+      </p>
+      <hr />
+      <h2><a name="Conclusion"></a>Conclusion</h2>
+      <p>
+        Thus, a web page you see in a browser is a combination of the document’s
+        data sources, with the CSS formatting rules applied. In the other
+        tutorials in this section you will learn more about CSS, why it is
+        important, and how to use it effectively.
+      </p>
+      <hr />
+      <h2><a name="Why use CSS?"></a>Why use CSS?</h2>
+      <p>
+        CSS helps you to keep the informational content of a document separate
+        from the details of how to display it. The details of how to display the
+        document are known as its style. You keep the style separate from the
+        content so that you can:
+      </p>
+      <ul>
+        <li>Avoid duplication</li>
+        <li>Make maintenance easier</li>
+        <li>
+          Use the same content with different styles for different purposes
+        </li>
+      </ul>
+      <p>
+        Your web site might have thousands of pages that look similar. Using
+        CSS, you store the style information in common files that all the pages
+        share. When a user displays a web page, the user’s browser loads the
+        style information along with the content of the page. When a user prints
+        a web page, you might provide different style information that makes the
+        printed page easy to read.
+      </p>
+      <p>
+        In general, you use HTML to describe the content of the document, not
+        its style; you use CSS to specify its style, not its content. There are
+        exceptions to this rule, of course, and HTML also provides some ways to
+        specify style. For example, in HTML you can use a
+        <b>
+          tag to make text bold, and you can specify the background colour of a
+          page in its tag.</b
+        >
+      </p>
+      <p>
+        When you use CSS, you normally avoid using these HTML style features so
+        that all your document’s style information is in one place.
+      </p>
+      <hr />
+      <h2><a name="selectors"></a>Selectors</h2>
+      <p>
+        CSS has its own terminology to describe the CSS language. In a previous
+        tutorial, you created a line in your stylesheet like this:
+      </p>
+      <pre>
+      <code> strong {
+        color: red;
+      }
+    </code>
+    </pre>
+      <p>
+        In CSS terminology, this entire code section is a rule. The rule starts
+        with strong, which is a selector. It selects which elements in the DOM
+        the rule applies to.
+      </p>
+      <ul>
+        <li>The part inside the braces is the declaration.</li>
+        <li>The keyword color is a property, and red is a value.</li>
+        <li>
+          The semicolon after the property-value pair separates it from other
+          property-value pairs in the same declaration.
+        </li>
+      </ul>
+      <p>
+        This guide refers to a selector like strong as a tag selector; you will
+        also see it commonly referred to as an element selector. The CSS
+        Specification refers to it as a type selector.
+      </p>
+      <p>
+        In addition to tag names, you can use attribute values in selectors.
+        This allows your rules to be more specific. Two attributes, class and
+        id, have special status for CSS.
+      </p>
+      <hr />
+      <h2><a name="Class selectors"></a> Class selectors</h2>
+      <p>
+        Use the class attribute in an element to assign the element to a named
+        class. It is up to you what name you choose for the class. Multiple
+        elements in a document can have the same class value.
+      </p>
+      <p>
+        In your style sheet, type a dot (period) before the class name when you
+        use it in a selector.
+      </p>
+      <hr />
+      <h2><a name="ID selectors"></a> ID selectors</h2>
+      <p>
+        Use the id attribute in an element to assign an ID to the element. It is
+        up to you what name you choose for the ID. The ID name must be unique in
+        the document.
+      </p>
+      <p>
+        In your stylesheet, type a number sign (hash) before the ID when you use
+        it in a selector.
+      </p>
+    </div>
+  </body>
+</html>
