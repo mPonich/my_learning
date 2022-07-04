@@ -5,12 +5,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
 }
 
 .carousel {
   position: relative;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-  margin-top: 26px;
   &-wraper {
     position: relative;
     overflow: hidden;
@@ -61,9 +61,6 @@ body {
     color: #aaaaaa;
   }
   &-indicators {
-    // display: flex;
-    // align-items: flex-end;
-    // justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -73,7 +70,6 @@ body {
     bottom: 0;
     left: 0;
     text-align: center;
-    // z-index: 1;
     & li {
       display: inline-block;
       margin: 0 5px;
