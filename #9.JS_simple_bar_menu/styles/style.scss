@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  background: #212224;
+}
+
+.menu {
+  margin: 0 auto;
+  max-width: 950px;
+  padding-top: 10px;
+  .title {
+    color: white;
+    font-size: 65px;
+    text-align: center;
+  }
+  hr .underline {
+    color: white;
+    border: none;
+    background-color: white;
+    height: 2px;
+  }
+  .btn_container {
+    margin: 0 auto;
+    display: flex;
+    max-width: 800px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    button {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      font-size: 28px;
+      cursor: pointer;
+      padding: 15px;
+      height: 45px;
+      background-color: #fff;
+      border-radius: 10px;
+      border: solid 1px;
+    }
+    button:hover {
+      background-color: #212224;
+      color: white;
+      transition: all 0.2s ease-in;
+      border-color: #fff;
+      border: solid 1px;
+    }
+  }
+  .wraper_center {
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px 50px;
+    .menu_item {
+      display: flex;
+      color: white;
+      padding: 5px;
+      border-color: #fff;
+      border-radius: 10px;
+      border: solid 1px;
+      .photo {
+        height: 250px;
+        border-radius: 10px;
+        border-color: white;
+        border: solid 1px;
+      }
+      .item_info {
+        margin-left: 10px;
+        .item_header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h4 {
+            font-size: 30px;
+          }
+          .price {
+            color: yellow;
+            font-size: 25px;
+          }
+        }
+        hr {
+          margin: 5px 0 5px 0;
+          border: dashed 1px;
+        }
+        .item_text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menu {
+    .wraper_center {
+      margin: 25px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .menu_item {
+        max-width: 600px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .menu {
+    .wraper_center {
+      .menu_item {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
